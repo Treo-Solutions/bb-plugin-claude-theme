@@ -5,8 +5,10 @@ Terracotta accents with charcoal dark and off-white light palettes. An independe
 ## Install
 
 ```sh
-bb plugin install git:https://github.com/Treo-Solutions/bb-plugin-claude-theme.git@^0.1.0
+bb plugin install "git:https://github.com/Treo-Solutions/bb-plugin-claude-theme.git@^0.1.0"
 ```
+
+Keep the quotes when copying this command. Windows Command Prompt otherwise removes the `^` from the version range. The quoted command also works in PowerShell and POSIX shells.
 
 In **Settings → Appearance**, select **Claude Theme** under Palette. Choose **Light**, **Dark** or **System** under Theme. System follows the operating system's preferred appearance. From the CLI:
 
@@ -15,6 +17,8 @@ bb theme set plugin:claude-theme:claude-theme
 ```
 
 Requires BB **0.47.1 or later, below 1.0**, with Plugin SDK **0.6.79 or later, below 0.7**. No account or external service is required. The source VS Code extension does not need to be installed.
+
+Git must be available on the machine running BB to install from GitHub.
 
 ## Dark
 
@@ -34,8 +38,10 @@ The BB adaptation uses more readable low-emphasis labels, weaker selection tints
 
 ## Development
 
+Run from a clone of this repository:
+
 ```sh
-npm ci --ignore-scripts
+npm ci --include=dev --ignore-scripts
 npm run typecheck
 bb plugin build
 bb plugin install .
