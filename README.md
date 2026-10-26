@@ -5,10 +5,10 @@ Terracotta accents with charcoal dark and off-white light palettes. An independe
 ## Install
 
 ```sh
-bb plugin install "git:https://github.com/Treo-Solutions/bb-plugin-claude-theme.git@^0.1.0"
+bb plugin install "git:https://github.com/Treo-Solutions/bb-plugin-claude-theme.git@v0.1.0"
 ```
 
-Keep the quotes when copying this command. Windows Command Prompt otherwise removes the `^` from the version range. The quoted command also works in PowerShell and POSIX shells.
+This installs the exact tagged release `v0.1.0`. The command works in Command Prompt, PowerShell and POSIX shells without relying on caret escaping.
 
 In **Settings → Appearance**, select **Claude Theme** under Palette. Choose **Light**, **Dark** or **System** under Theme. System follows the operating system's preferred appearance. From the CLI:
 
