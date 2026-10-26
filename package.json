@@ -1,0 +1,60 @@
+{
+  "name": "bb-plugin-claude-theme",
+  "version": "0.1.0",
+  "description": "Give BB terracotta accents with charcoal dark and off-white light palettes, matching syntax colours, and terminal colours.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Treo-Solutions",
+  "repository": {
+    "url": "https://github.com/Treo-Solutions/bb-plugin-claude-theme.git",
+    "type": "git"
+  },
+  "homepage": "https://github.com/Treo-Solutions/bb-plugin-claude-theme#readme",
+  "bugs": {
+    "url": "https://github.com/Treo-Solutions/bb-plugin-claude-theme/issues"
+  },
+  "engines": {
+    "bbPluginSdk": ">=0.6.79 <0.7.0",
+    "bb": ">=0.47.1 <1.0.0"
+  },
+  "files": [
+    "server.ts",
+    "dist/",
+    "themes/",
+    "assets/",
+    "screenshots/",
+    "README.md",
+    "PLUGIN_OVERVIEW.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "bb plugin build"
+  },
+  "bb": {
+    "name": "Claude Theme for BB",
+    "description": "Give BB terracotta accents with charcoal dark and off-white light palettes, matching syntax colours, and terminal colours.",
+    "branding": {
+      "icon": "./assets/claude-theme.svg"
+    },
+    "server": "./server.ts",
+    "skills": [],
+    "themes": [
+      {
+        "name": "Claude Theme",
+        "codeTheme": {
+          "dark": "./themes/claude-dark.json",
+          "light": "./themes/claude-light.json"
+        },
+        "description": "Light and dark palettes adapted from Claude Theme for VS Code by SK.",
+        "css": "./themes/claude-theme.css",
+        "id": "claude-theme"
+      }
+    ]
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "@get-bb/plugin-sdk": "0.6.79"
+  }
+}

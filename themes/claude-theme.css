@@ -1,0 +1,210 @@
+/* Claude Theme for BB.
+ * Adapted from Claude Theme for VS Code by SK, version 3.1.0 (MIT).
+ * Copyright (c) 2026 S K 🦊. See LICENSE.txt and README.md.
+ * Follows BB's Light / Dark / System mode, with matching syntax palettes.
+ */
+:root,
+.light {
+  color-scheme: light;
+  --canvas: #FAFAF8;
+  --ink: #2A2A28;
+  --background: #FAFAF8;
+  --foreground: #2A2A28;
+  --card: #F0F0EC;
+  --card-foreground: #2A2A28;
+  --popover: #FAFAF8;
+  --popover-foreground: #2A2A28;
+  --primary: #A8522F;
+  --primary-foreground: #FFFFFF;
+  --brand: #C2613A;
+  --ring: #C2613A;
+  --file-accent: #1B6ACB;
+  --secondary: #f8f4f0;
+  --secondary-foreground: #2A2A28;
+  --accent: #f7f1ed;
+  --accent-foreground: #A8522F;
+  --muted: #F0F0EC;
+  --muted-foreground: #5C5C56;
+  --subtle-foreground: #5C5C56;
+  --readback-foreground: #5C5C56;
+  --border: #D8D8D2;
+  --border-hairline: #D8D8D2;
+  --border-seam: #D8D8D2;
+  --border-seam-vertical: #D8D8D2;
+  --input: #B0B0A8;
+  --surface-recessed: #FAFAF8;
+  --surface-raised: #F0F0EC;
+  --surface-selected: #f6eee9;
+  --surface-selected-border: #C2613A80;
+  --sidebar: #F0F0EC;
+  --sidebar-foreground: #2A2A28;
+  --sidebar-accent: #efece7;
+  --sidebar-accent-foreground: #A8522F;
+  --sidebar-border: #D8D8D2;
+  --sidebar-primary: #A8522F;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-ring: #C2613A;
+  --destructive: #CF222E;
+  --destructive-foreground: #FFFFFF;
+  --destructive-text: #CF222E;
+  --surface-destructive: #FEE2E2;
+  --surface-destructive-border: #CF222E;
+  --warning: #7D4E00;
+  --warning-text: #7D4E00;
+  --attention: #7D4E00;
+  --success: #116329;
+  --diff-added: #116329;
+  --diff-removed: #CF222E;
+  --pr-merged: #7C3AED;
+  --surface-scrim: #FAFAF8f0;
+  --state-hover: #C2613A0f;
+  --state-active: #C2613A14;
+  --ansi-0: #2A2A28;
+  --ansi-bg-fg-0: #FFFFFF;
+  --ansi-1: #CF222E;
+  --ansi-bg-fg-1: #FFFFFF;
+  --ansi-2: #1A7F37;
+  --ansi-bg-fg-2: #FFFFFF;
+  --ansi-3: #9A6700;
+  --ansi-bg-fg-3: #FFFFFF;
+  --ansi-4: #1B6ACB;
+  --ansi-bg-fg-4: #FFFFFF;
+  --ansi-5: #7C3AED;
+  --ansi-bg-fg-5: #FFFFFF;
+  --ansi-6: #0B7285;
+  --ansi-bg-fg-6: #FFFFFF;
+  --ansi-7: #57534E;
+  --ansi-bg-fg-7: #FFFFFF;
+  --ansi-8: #8B8B85;
+  --ansi-bg-fg-8: #000000;
+  --ansi-9: #A40E26;
+  --ansi-bg-fg-9: #FFFFFF;
+  --ansi-10: #116329;
+  --ansi-bg-fg-10: #FFFFFF;
+  --ansi-11: #7D4E00;
+  --ansi-bg-fg-11: #FFFFFF;
+  --ansi-12: #0550AE;
+  --ansi-bg-fg-12: #FFFFFF;
+  --ansi-13: #6622CC;
+  --ansi-bg-fg-13: #FFFFFF;
+  --ansi-14: #085D6E;
+  --ansi-bg-fg-14: #FFFFFF;
+  --ansi-15: #2A2A28;
+  --ansi-bg-fg-15: #FFFFFF;
+}
+
+.dark {
+  color-scheme: dark;
+  --canvas: #1F1F1E;
+  --ink: #c3c1ba;
+  --background: #1F1F1E;
+  --foreground: #c3c1ba;
+  --card: #2a2a2a;
+  --card-foreground: #c3c1ba;
+  --popover: #303030;
+  --popover-foreground: #c3c1ba;
+  --primary: #d87757;
+  --primary-foreground: #1E1F22;
+  --brand: #d87757;
+  --ring: #d87757;
+  --file-accent: #4492e7;
+  --secondary: #322824;
+  --secondary-foreground: #c3c1ba;
+  --accent: #352a25;
+  --accent-foreground: #e0906e;
+  --muted: #2a2a2a;
+  --muted-foreground: #b7b5a6;
+  --subtle-foreground: #9C9893;
+  --readback-foreground: #9C9893;
+  --border: #3e3e38;
+  --border-hairline: #3e3e38;
+  --border-seam: #3e3e38;
+  --border-seam-vertical: #3e3e38;
+  --input: #51504a;
+  --surface-recessed: #1E1F22;
+  --surface-raised: #303030;
+  --surface-selected: #3d2d27;
+  --surface-selected-border: #d8775780;
+  --sidebar: #2a2a2a;
+  --sidebar-foreground: #c3c1ba;
+  --sidebar-accent: #3b322f;
+  --sidebar-accent-foreground: #e0906e;
+  --sidebar-border: #3e3e38;
+  --sidebar-primary: #d87757;
+  --sidebar-primary-foreground: #1E1F22;
+  --sidebar-ring: #d87757;
+  --destructive: #f14444;
+  --destructive-foreground: #1E1F22;
+  --destructive-text: #f14444;
+  --surface-destructive: #3d2020;
+  --surface-destructive-border: #f14444;
+  --warning: #e1a035;
+  --warning-text: #e1a035;
+  --attention: #e1a035;
+  --success: #51a556;
+  --diff-added: #51a556;
+  --diff-removed: #f14444;
+  --pr-merged: #9c87f6;
+  --surface-scrim: #1F1F1Ef0;
+  --state-hover: #d8775714;
+  --state-active: #d8775729;
+  --ansi-0: #1a1813;
+  --ansi-bg-fg-0: #f7f5ee;
+  --ansi-1: #ac3031;
+  --ansi-bg-fg-1: #f7f5ee;
+  --ansi-2: #3e8343;
+  --ansi-bg-fg-2: #f7f5ee;
+  --ansi-3: #c08000;
+  --ansi-bg-fg-3: #1a1813;
+  --ansi-4: #1b7ede;
+  --ansi-bg-fg-4: #1a1813;
+  --ansi-5: #9c87f6;
+  --ansi-bg-fg-5: #1a1813;
+  --ansi-6: #008c92;
+  --ansi-bg-fg-6: #1a1813;
+  --ansi-7: #b7b5a6;
+  --ansi-bg-fg-7: #1a1813;
+  --ansi-8: #51504a;
+  --ansi-bg-fg-8: #f7f5ee;
+  --ansi-9: #f14444;
+  --ansi-bg-fg-9: #1a1813;
+  --ansi-10: #51a556;
+  --ansi-bg-fg-10: #1a1813;
+  --ansi-11: #e1a035;
+  --ansi-bg-fg-11: #1a1813;
+  --ansi-12: #4492e7;
+  --ansi-bg-fg-12: #1a1813;
+  --ansi-13: #b7a8f8;
+  --ansi-bg-fg-13: #1a1813;
+  --ansi-14: #40b1b7;
+  --ansi-bg-fg-14: #1a1813;
+  --ansi-15: #f7f5ee;
+  --ansi-bg-fg-15: #1a1813;
+}
+
+/* BB's navigation uses explicit neutral text utilities. Override only the
+ * current-page state so selected labels and their currentColor icons pick up
+ * mode-appropriate terracotta. Semantic status colours keep their own tokens.
+ */
+:is(a, button)[aria-current="page"] {
+  color: var(--accent-foreground);
+  background-color: var(--surface-selected);
+}
+
+/* BB's native tab pills expose their active state on the direct select button.
+ * An inset underline does not alter tab sizing or the close-button hit area.
+ */
+[data-tab-pill]:has(> button[aria-pressed="true"]) {
+  color: var(--accent-foreground);
+  box-shadow: inset 0 -2px 0 var(--primary);
+}
+
+[data-tab-pill] > button[aria-pressed="true"] {
+  color: var(--accent-foreground);
+}
+
+/* Settings/plugin tabs that use the standard ARIA tab pattern. */
+[role="tab"][aria-selected="true"] {
+  color: var(--accent-foreground);
+  box-shadow: inset 0 -2px 0 var(--primary);
+}
